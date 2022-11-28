@@ -50,11 +50,11 @@ require([
           }
         },
         orderBy: {
-          field: "soillevel"
+          field: "Soil Level"
         },
         renderer: {
           type: "simple",
-          field: "soillevel",
+          field: "Soil Level",
           symbol: {
             type: "simple-marker",
             color: "orange",
@@ -63,7 +63,7 @@ require([
           visualVariables: [
             {
               type: "size",
-              field: "soillevel",
+              field: "Soil Level",
               stops: [
                 {
                   value: 1,
@@ -110,7 +110,7 @@ require([
               fieldInfos: [
             
                 {
-                  fieldName: "soillevel",
+                  fieldName: "Soil Level",
                   label: "Soil Level",
                   visible: true
                 },
