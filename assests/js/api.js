@@ -38,9 +38,9 @@ require([
     //Map Properties
       const layer = new GeoJSONLayer({
         
-       url:"https://front-end-map-ncar.s3.us-west-1.amazonaws.com/GeoJson.json",
-        copyright: "USGS Earthquakes",
-        title: "USGS Earthquakes",
+       url:"https://front-end-map-ncar.s3.us-west-1.amazonaws.com/final_geojson.json",
+        copyright: "USGS Soilmoisture",
+        title: "USGS Soilmoisture",
        
         timeInfo: {
           startField: "time", 
@@ -108,7 +108,11 @@ require([
             {
               type: "fields",
               fieldInfos: [
-            
+                {
+                  fieldName: "Time",
+                  label: "Time",
+                  visible: true
+                },
                 {
                   fieldName: "Soil Level",
                   label: "Soil Level",
